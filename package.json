@@ -1,6 +1,6 @@
 {
   "name": "ts-extend",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "ts_type_extend",
   "main": "./dist/main.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "ts"
   ],
   "author": "WildXBird",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/WildXBird/TSExtend/issues"
   },
