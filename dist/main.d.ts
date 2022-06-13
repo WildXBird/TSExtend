@@ -1,2 +1,2 @@
-import { ExJSON } from "./json";
-export declare type JSON = ExJSON;
+export { JSONable as JSON } from "./json";
+export { ExJSON as XJSON } from "./json";

@@ -13,6 +13,14 @@ export type JSONable = {
     [str: string]: JSONValue | JSONable
 } | JSONValue[] | JSONable[]
 
+
+
+export type Json<T extends JSONable> = T
+
+
+
+
+
 /**
  * 扩展的可JSON化值
  * 
@@ -20,10 +28,12 @@ export type JSONable = {
  */
 type ExJSONValue = JSONValue | URL | Date
 
-export type ExJSON = {
-    [str: string]: ExJSONValue | ExJSON
-} | ExJSONValue[] | ExJSON[]
+export type ExJSONable = {
+    [str: string]: ExJSONValue | ExJSONable
+} | ExJSONValue[] | ExJSONable[]
 
+
+export type Exjson<T extends ExJSONable> = T
 
 export function ExJSONReplace(key: string, value: any): JSONValue | any[] {
     // console.warn("ExJSONReplace", key.length, "key:", key, "value:", value)
