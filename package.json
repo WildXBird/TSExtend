@@ -2,8 +2,8 @@
   "name": "ts-extend",
   "version": "0.0.16",
   "description": "ts_type_extend",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
+  "main": "./dist/cjs/main.js",
+  "module": "./dist/csm/main.js",
   "exports": {
     ".": {
       "node": {
@@ -16,7 +16,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "tsc  --project ./cjs",
+    "build": "tsc  --project ./cjs && tsc",
     "prepublishOnly": "tsc && node ./CompilerDist/build.js"
   },
   "repository": {
