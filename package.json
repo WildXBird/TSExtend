@@ -1,6 +1,6 @@
 {
   "name": "ts-extend",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "ts_type_extend",
   "main": "./dist/cjs/main.js",
   "module": "./dist/csm/main.js",
@@ -17,7 +17,7 @@
   },
   "scripts": {
     "build": "tsc  --project ./cjs && tsc",
-    "prepublishOnly": "tsc && node ./CompilerDist/build.js"
+    "prepublishOnly": "tsc  --project ./cjs && tsc"
   },
   "repository": {
     "type": "git",
