@@ -2,15 +2,11 @@
   "name": "ts-extend",
   "version": "0.0.11",
   "description": "ts_type_extend",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "scripts": {
     "build": "tsc && node ./CompilerDist/build.js",
     "prepublishOnly": "tsc && node ./CompilerDist/build.js"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    }
   },
   "repository": {
     "type": "git",
