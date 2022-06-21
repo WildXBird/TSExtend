@@ -6,7 +6,6 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "importHelpers": true,
-    "jsx": "react-jsx",
     "esModuleInterop": true,
     "sourceMap": true,
     "declaration": true,
