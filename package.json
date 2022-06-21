@@ -1,6 +1,6 @@
 {
   "name": "ts-extend",
-  "version": "0.0.22",
+  "version": "0.1.0",
   "description": "ts_type_extend",
   "main": "./dist/cjs/main.js",
   "module": "./dist/csm/main.js",
