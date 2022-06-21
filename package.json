@@ -1,12 +1,23 @@
 {
   "name": "ts-extend",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "description": "ts_type_extend",
-  "main": "./dist/main.js",
+  "main": "./dist/cjs/main.js",
+  "module": "./dist/csm/main.js",
+  "exports": {
+    ".": {
+      "node": {
+        "module": "./dist/index.cjs",
+        "require":"./dist/index.cjs",
+        "import":"./dist/index.mjs"
+      },
+      "default": "./dist/esm-browser/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc  --project ./cjs && tsc",
+    "prepublishOnly": "tsc && node ./CompilerDist/build.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +33,10 @@
   },
   "homepage": "https://github.com/WildXBird/TSExtend#readme",
   "devDependencies": {
+    "esbuild": "^0.14.47",
+    "@types/node": "^18.0.0",
     "typescript": "^4.7.3"
+  },
+  "dependencies": {
   }
 }
