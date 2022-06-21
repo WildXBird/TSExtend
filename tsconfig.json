@@ -2,7 +2,7 @@
   "compilerOptions": {
     "noEmitOnError": true,
     "target": "esnext",
-    "module": "CommonJS",
+    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "importHelpers": true,
