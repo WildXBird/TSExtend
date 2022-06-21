@@ -16,7 +16,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "tsc && node ./CompilerDist/build.js",
+    "build": "tsc  --project ./cjs",
     "prepublishOnly": "tsc && node ./CompilerDist/build.js"
   },
   "repository": {
