@@ -1,17 +1,31 @@
 /**
- * 受限制的可JSON化值
+ * 受限制的可JSON化值的最小单位
  * 
  * null 是不允许的
  * 
  * undefined 在转换时会被删除
  */
 type JSONValue = string | number | boolean | undefined
+
 /**
- * 受限制的可JSON化Object
+ * 对象JSON
  */
-export type JSONable = {
+export type ObjectJson = {
     [str: string]: JSONValue | JSONable
-} | JSONValue[] | JSONable[]
+}
+
+/**
+ * 数组JSON
+ */
+export type ArrayJson = JSONValue[] | JSONable[]
+
+
+/**
+ * 可JSON化的Object
+ */
+export type JSONable = ObjectJson | ArrayJson
+
+
 
 
 
