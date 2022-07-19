@@ -29,7 +29,7 @@ export type JSONable = ObjectJson | ArrayJson
 
 
 
-export type Json<T extends JSONable> = T
+export type Json<T extends JSONable = JSONable> = T
 
 
 
@@ -47,7 +47,7 @@ export type ExJSONable = {
 } | ExJSONValue[] | ExJSONable[]
 
 
-export type Exjson<T extends ExJSONable> = T
+export type Exjson<T extends ExJSONable = ExJSONable> = T
 
 export function ExJSONReplace(key: string, value: any): JSONValue | any[] {
     // console.warn("ExJSONReplace", key.length, "key:", key, "value:", value)
